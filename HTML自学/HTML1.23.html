@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    
+    <style>
+        .demo a{
+            float: left;
+            display: block;
+            height: 50px;
+            width: 50px;
+            border-radius: 10px;text-align: center;
+            text-decoration: none;
+            margin-right: 5px;
+            font: bold 20px/50px Arial;
+        }
+        /*属性选择器    属性名 = 属性值（正则）
+        存在ID属性的元素   a[id = ]{}
+        */
+        
+        /*包含id=first的a标签*/
+        a[id=first]{
+        
+        }
+
+        /*class的属性为links的a标签*/
+        a[class ="links"]{
+    
+        }
+        
+        
+        /*包含links关键词的class的a标签*/
+        a[class *="links"]{
+        
+        }
+
+        /*href以http开头*/
+        a[href ^= "http"]{
+            background: red;
+        }
+
+        /*href以g结尾*/
+        a[href $= g]{
+            background: green;
+        }
+    
+    </style>
+
+</head>
+<body>
+
+<p class="demo">
+    <a href="http://www.baidu.com" class="links itme" id="first">1</a>
+    <a href="http://www.bilibili.com" class="links itme itme">2</a>
+    <a href="images/123.html" class="links itme">3</a>
+    <a href="images/456.jpg" class="links itme">4</a>
+    <a href="sad" class="links itme itme">5</a>
+    <a href="adc" class="links itme">6</a>
+</p>
+
+</body>
+</html>

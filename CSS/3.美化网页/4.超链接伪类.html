@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    
+    <style>
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        /*鼠标悬浮的颜色*/
+        a:hover{
+            color: red;
+        }
+        /*鼠标被按住的颜色*/
+        a:active{
+            color: green;
+        }
+        /*被访问过的颜色*/
+        a:visited{
+            color: yellow;
+        }
+        
+        #id-1{
+            /*右下为正方向*/
+            text-shadow: red 10px 10px 10px;
+        }
+    </style>
+</head>
+<body>
+<a href="#">
+    <img src="#" alt="">测试超链接伪类
+</a>
+
+<a href="#" id="id-1">
+    测试阴影
+</a>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- 避免使用class和id选择器 -->
+    <style>
+        /* ul的第一个子元素 */
+        ul li:first-child{
+            background: blue;
+        }
+        /* ul的最后一个子元素 */
+        ul li:last-child{
+            background-color: aqua;
+        }
+        /* 了解两个 */
+        /* 选中p1：定位到父元素，选中父级的第一个元素，并且是当前元素（p标签），按顺序 */
+        p:nth-child(1){
+            background: red;
+        }
+        /* 选中p1：选中父元素下的p元素的第二个，按类型 */
+        p:nth-of-type(2){
+            background-color: chartreuse;
+        }
+        /* 伪类就是带冒号：的 */
+        a:hover{
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>h1</h1> -->
+    <p>p1</p>
+    <a href="">361023</a>
+    <p>p2</p>
+    <p>p3</p>
+    <ul>
+        <li>li1</li>
+        <li>li2</li>
+        <li>li3</li>
+    </ul>
+</body>
+</html>

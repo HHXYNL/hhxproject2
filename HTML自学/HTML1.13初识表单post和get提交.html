@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>hhx表单和提交</title>
+</head>
+<body>
+    <h1>注册</h1>
+    
+<!-- 表单form
+    action: 表单提交的位置，可以是网站，也可以是一个请求处理地址
+    method: post, get 提交方式
+            get:在url中看到我们提交的信息，不安全，高效
+            post:比较安全，传输大文件
+-->
+
+<form action="HTML1.3基本信息.html" method="post">
+    <!-- 文本输入框：input -->
+    <p>账号：<input type="text" name="username"></p>
+    <!-- 密码框： -->
+    <p>密码：<input type="password" name="pwd"></p>
+
+    <p>
+        <!-- 提交 重置 -->
+        <input type="submit">
+        <input type="reset">
+    </p>
+</form>
+    
+</body>
+</html>

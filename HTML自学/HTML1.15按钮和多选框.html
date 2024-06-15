@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>hhx按钮和多选框</title>
+</head>
+<body>
+    <h1>注册</h1>
+    
+<!-- 表单form
+    action: 表单提交的位置，可以是网站，也可以是一个请求处理地址
+    method: post, get 提交方式
+            get:在url中看到我们提交的信息，不安全，高效
+            post:比较安全，传输大文件
+-->
+
+<form action="HTML1.3基本信息.html" method="get">
+    <!-- 文本输入框：input -->
+    <!-- 
+        value="哈尔滨理工大学"  默认初始值
+        maxlength="13"        最长能写几个字符
+        size="30"             文本框长度
+     -->
+    <p>账号：<input type="text" name="username" value="哈尔滨理工大学" maxlength="13" size="30"></p>
+    <!-- 密码框： -->
+    <p>密码：<input type="password" name="pwd"></p>
+
+    <!-- 单选框标签
+    input type="radio"
+    value="boy" 单选框的值
+    name：表示组（一个组只能选一个）
+    -->
+    <p>性别：
+        <input type="radio" value="boy" name="sex">男
+        <input type="radio" value="girl" name="sex">女
+    </p>
+    <!-- 多选框标签
+    type="checkbox" 类似数组
+    -->
+    <p>爱好：
+        <input type="checkbox" value="sleep" name="hobby">睡觉
+        <input type="checkbox" value="code" name="hobby">敲代码
+        <input type="checkbox" value="chat" name="hobby">聊天
+        <input type="checkbox" value="game" name="hobby">游戏
+    </p>
+    <!-- 按钮
+    value是按钮的名字
+    type="button"普通按钮 "image"图片按钮 "submit"提交按钮 "reset"重置按钮
+    -->
+    <p>按钮：
+       <input type="button" name="btn1" value="点击变长">
+       <input type="image" src="../resources/image/哈理工校徽图标.jpg"> 
+    </p>
+
+    <!-- 提交 重置 -->
+    <p>
+        <input type="submit">
+        <input type="reset" value="清空表单">
+    </p>
+</form>
+    
+</body>
+</html>
